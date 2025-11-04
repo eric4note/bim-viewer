@@ -12,9 +12,11 @@ export default defineConfig({
       imports: [
         'vue',
         'vue-router',
-        'pinia'
+        'pinia',
+        '@vueuse/core'
       ],
       dts: 'src/auto-imports.d.ts',
+      dirs: ['src/composables', 'src/stores']
     }),
     Components({
       dirs: ['src/components'],
